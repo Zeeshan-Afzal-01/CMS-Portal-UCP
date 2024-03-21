@@ -1,0 +1,90 @@
+.studentPortal{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.studentName{
+    font-size: 30px;
+    margin-left: 23px;
+    font-weight: 600;
+}
+.department
+{
+    font-size: 15px;
+    margin-left: 23px;
+    font-weight: 400;
+} 
+.subjects-row-1{
+    margin-top: 20vw;
+}
+.-row-1{
+    display:flex;
+
+
+}
+.H3{
+    margin-bottom: 1.5vw;
+
+}
+.allsubjects-row1{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.allsubjects-row2{
+display: flex;
+align-items: center;
+margin-left: 12px;
+}
+.img-text{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-button-red-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.main-button-red-bottom a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    /* You can change the background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.ad-1{
+    margin-left: 20px;
+
+
+
+}
+.ad-1 p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.ad-1 h3{
+    font-size: 17px;
+    font-weight: 400;
+    
+
+}
+.buttons-ad{
+width:50px;
+    justify-content: right;
+}
+.ap-dc-buttons{
+    display:flex;
+
+
+}
+.bck{
+    background-color: blue;
+    width:30px;
+}
+

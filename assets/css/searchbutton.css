@@ -1,0 +1,83 @@
+/* Define your initial font size */
+body {
+    font-size: 16px;
+  }
+  
+  
+  /* Add your existing styles */
+  .nvbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-icon {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: slideDown 0.3s ease forwards;
+    z-index: 1000;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Show search bar when icon is clicked */
+  .show {
+    display: block;
+  }
+  
+  .submit-button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size:13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  

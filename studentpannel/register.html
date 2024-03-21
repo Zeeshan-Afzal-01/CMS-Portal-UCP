@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Template Mo" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <title>Register Form</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/hero.css" />
+  </head>
+
+  <body>
+    
+
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <a
+                href="#"
+                style="display: flex; align-items: center"
+                class="logo"
+              >
+                <img
+                  style="width: 70px"
+                  src="../assets/images/img-01.png"
+                  alt="Ucp Logo"
+                />
+                <h1>University Of Central Punjab</h1>
+              </a>
+
+              <ul id="nav-signin" class="nav">
+                <li class="scroll-to-section"><a href="../index.html">Home</a></li>
+                <li class="scroll-to-section">
+                  <a href="../index.html#degrees">Degrees</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="../index.html#event">Events</a>
+                </li>
+
+                <li class="scroll-to-section">
+                  <a href="../index.html#contact">Contact Us</a>
+                </li>
+
+                <div class="register-button">
+                  <div class="scroll-to-section">
+                    <a class="b" href="../register.html">REGISTER NOW!</a>
+                  </div>
+                </div>
+                <div class="signin-button">
+                  <div class="scroll-to-section">
+                    <a class="b" href="../signin.html">SIGN IN</a>
+                  </div>
+                </div>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact-us" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 align-self-center">
+            <div class="row">
+              <div class="col-lg-12">
+                <form
+                  id="contact"
+                  action="register.php"
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>Register Now as a Student</h2>
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="padding-left: 10px" for="name">Name:</label>
+                      <input
+                        name="name"
+                        type="text"
+                        id="name"
+                        placeholder="Name...*"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="padding-left: 10px" for="cnic">CNIC:</label>
+                      <input
+                        name="cnic"
+                        type="text"
+                        id="cnic"
+                        pattern="\d{5}-\d{7}-\d"
+                        placeholder="CNIC...*"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="padding-left: 10px" for="photo"
+                        >Upload Your Photo:</label
+                      >
+                      <input
+                        style="padding-top: 7px"
+                        name="photo"
+                        type="file"
+                        id="photo"
+                        accept="image/*"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="padding-left: 10px" for="result"
+                        >Upload Indermediate Result Card:</label
+                      >
+                      <input
+                        style="padding-top: 7px"
+                        name="result"
+                        type="file"
+                        id="result"
+                        accept="image/*"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="padding-left: 10px" for="email"
+                        >Email:</label
+                      >
+                      <input
+                        name="email"
+                        type="email"
+                        id="email"
+                        placeholder="Email..."
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="margin-top: 30px" for="gender"
+                        >Gender:</label
+                      >
+                      <select name="gender" id="gender" required>
+                        <option value="" disabled selected>
+                          Select Gender...
+                        </option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="margin-top: 30px" for="department"
+                        >Department:</label
+                      >
+                      <select name="department" id="department" required>
+                        <option value="" disabled selected>
+                          Select Department...
+                        </option>
+                        <option value="se">Software Engineering</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="it">Information Technology</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-4">
+                      <label style="padding-left: 10px" for="password"
+                        >Password:</label
+                      >
+                      <input
+                        name="password"
+                        type="password"
+                        id="password"
+                        placeholder="Password...*"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-12">
+                      <button
+                        type="submit"
+                        name="submit"
+                        id="form-submit"
+                        class="button"
+                      >
+                        REGISTER NOW
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Copyright © 2002 University Of Central Punjab. All Rights Reserved.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      
+  
+  // JavaScript to dynamically adjust font size based on screen width
+  window.addEventListener('resize', function() {
+    var screenWidth = window.innerWidth;
+
+    // Apply different font sizes based on screen width
+    var fontSize = '14px'; // Default font size
+    if (screenWidth >= 767 && screenWidth <= 1000) {
+        fontSize = '7px'; // Adjust font size for screen width between 676px and 1000px
+    } else if (screenWidth >= 1000 && screenWidth <= 1400) {
+        fontSize = '10px'; // Adjust font size for screen width between 1000px and 1400px
+    }
+
+    var navLinks = document.querySelectorAll('.nav a');
+    navLinks.forEach(function(link) {
+        link.style.fontSize = fontSize;
+    });
+});
+
+// Trigger the resize event to apply styles on page load
+window.dispatchEvent(new Event('resize'));
+
+
+window.addEventListener('resize', function() {
+  var screenWidth = window.innerWidth;
+
+  var registerButton = document.querySelector('.register-button');
+  var signinButton = document.querySelector('.signin-button');
+
+  var registerLink = '<li class="scroll-to-section"><a style="margin-left:10px;" href="../register.html">REGISTER NOW!</a></li>';
+  var signinLink = '<li class="scroll-to-section"><a style="margin-left:10px;" href="../signin.html">SIGN IN</a></li>';
+
+  if (screenWidth < 676) {
+    // Replace register and signin buttons with links
+    registerButton.innerHTML = registerLink;
+    signinButton.innerHTML = signinLink;
+  } else {
+    // 
+    //                   <div class="scroll-to-section"><a href="signin.html">SIGN IN</a></div>
+    //                
+    // Replace register and signin links with buttons
+    registerButton.innerHTML = '<div class="main-button-red"><div class="scroll-to-section"><a class="b" style="margin-left:10px;" href="../register.html">REGISTER NOW!</a></div> </div>';
+    signinButton.innerHTML = '<div class="main-button-red"><div class="scroll-to-section"><a class="b" style="margin-left:10px;" href="../signin.html">SIGN IN</a></div> </div>';
+  }
+});
+
+// Trigger the resize event to apply styles on page load
+window.dispatchEvent(new Event('resize'));
+
+    </script>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>

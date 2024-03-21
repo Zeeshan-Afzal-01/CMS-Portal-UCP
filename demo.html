@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+    </style>
+</head>
+<body>
+    <div class="nvbar">
+        <div class="search-container">
+          <button class="search-icon" onclick="toggleSearchBar()">Search</button>
+          <div class="search-bar">
+            <form onsubmit="submitSearch(event)">
+              <input type="text" placeholder="Search...">
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+     function toggleSearchBar() {
+  var searchBar = document.querySelector('.search-bar');
+  searchBar.classList.toggle('show');
+}
+
+function submitSearch(event) {
+  event.preventDefault();
+  // Add your search functionality here, such as getting the search query and performing a search
+  var searchInput = event.target.querySelector('input[type="text"]').value;
+  console.log("Search query:", searchInput);
+}
+
+
+      </script>
+</body>
+</html>

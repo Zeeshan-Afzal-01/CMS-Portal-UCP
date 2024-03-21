@@ -1,0 +1,78 @@
+@media (max-width: 767px) {
+  #text {
+    font-size: 17px;
+  }
+  #buttons div {
+    display: none;
+  }
+  
+  #s-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 15px;
+  }
+  #img-text{
+    display:flex;
+    align-items: center;
+    width:100%;
+ }
+  #student-image{
+    width: 25%;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 15px;
+  }
+  .gender-1{
+    display:none;
+    
+  }
+  .gender-2{
+    margin-left:25px;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 768px) {
+    #accept-reject-button{
+        display: none;
+      }
+  #buttons-2 {
+    display: none;
+  }
+  #img-text{
+    display:flex;
+    align-items: center;
+    width:70%;
+ }
+  #s-image,#student-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 15px;
+  }
+  .gender-1{
+    text-transform: capitalize;
+    
+  }
+  .gender-2{
+    
+    display:none;
+  }
+  
+}
+#buttons-2 {
+  margin-top: 3%;
+}
+#buttons {
+  display: flex;
+
+  justify-content: right;
+  
+}
